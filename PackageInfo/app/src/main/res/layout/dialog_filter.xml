@@ -1,0 +1,301 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Search filters"
+            android:textColor="@color/app_text_tertiary_color"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background" >
+
+                        <Spinner
+                            android:id="@+id/ispName_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="ISP Name"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background" >
+
+                        <Spinner
+                            android:id="@+id/packageName_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Package Name"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background" >
+
+                        <Spinner
+                            android:id="@+id/validTime_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Valid Time"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background"
+                        android:gravity="center_vertical"
+                        android:paddingTop="16dp" >
+
+                        <EditText
+                            android:id="@+id/minPrice_et"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Min"
+							android:textColorHint="@color/filter_view_color"
+                            android:inputType="number"
+                            android:maxLength="5" />
+
+                        <View
+                            android:layout_width="16dp"
+                            android:layout_height="2dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/filter_view_color" />
+
+                        <EditText
+                            android:id="@+id/maxPrice_et"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Max"
+							android:textColorHint="@color/filter_view_color"
+                            android:inputType="number"
+                            android:maxLength="5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Price Range"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <MultiAutoCompleteTextView
+                        android:id="@+id/availableApp_mact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background"
+                        android:completionThreshold="1"
+                        android:gravity="start"
+                        android:hint="Get all apps"
+						android:textColorHint="@color/filter_view_color"
+                        android:inputType="textMultiLine"
+                        android:paddingTop="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Included Apps"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/filter_view_background" >
+
+                        <CheckBox
+                            android:id="@+id/calls_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:text="Calls"
+                            android:textColor="@color/filter_view_color" />
+
+                        <CheckBox
+                            android:id="@+id/sms_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:text="SMS"
+                            android:textColor="@color/filter_view_color" />
+
+                        <CheckBox
+                            android:id="@+id/data_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:text="Data"
+                            android:textColor="@color/filter_view_color" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@color/app_onPrimary_color"
+                        android:paddingEnd="4dp"
+                        android:paddingStart="4dp"
+                        android:text="Included"
+                        android:textColor="@color/filter_view_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line_primary_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:text="Cancel"
+                android:textColor="@color/app_text_tertiary_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnFliter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Apply"
+                android:textColor="@color/app_text_tertiary_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
